@@ -1,7 +1,6 @@
 import io
 import os
-import sys,time,json
-import pandas as pd
+import sys,time
 
 # 将项目根目录添加到 sys.path
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -9,10 +8,10 @@ if project_root not in sys.path:
     sys.path.append(project_root)
 
 import streamlit as st
-from playwright.sync_api import sync_playwright
+# from playwright.sync_api import sync_playwright
 from multiprocessing import Process, Queue
 import os
-from aifitrader.with_playwright.module_broswer_sync import Browser_operation
+from module_broswer_sync import Browser_operation
 
 # Initialize session_state
 if "browser_process" not in st.session_state:
@@ -22,13 +21,19 @@ if "command_queue" not in st.session_state:
 if "response_queue" not in st.session_state:
     st.session_state.response_queue = Queue()
 
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+state_json = os.path.join(script_dir, "state.json")
+# persistent_context_dir = os.path.join(script_dir, "persistent_context_dir")
 
 def playwright_process(command_queue, response_queue):
-    username = os.getenv('TRADER_USERNAME')
-    password = os.getenv('TRADER_PASSWORD')
+    # username = os.getenv('TRADER_USERNAME')
+    # password = os.getenv('TRADER_PASSWORD')
+    username = st.secrets["TRADER_USERNAME"]
+    password = st.secrets['TRADER_PASSWORD']
     robot = Browser_operation(url="https://web.ninjatrader.com/",headless=False)
-    #使用persistent_context_dir
-    robot.initialize_browser_page(persistent_context_dir=".")
+    #使用state_json
+    robot.initialize_browser_page(session_storage_path=state_json)
     robot.page.set_default_timeout(10000)
 
 
