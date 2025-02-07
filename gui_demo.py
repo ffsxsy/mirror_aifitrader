@@ -2,6 +2,11 @@ import io
 import os
 import sys,time
 
+
+import os
+os.system("playwright install --with-deps chromium")
+
+
 # 将项目根目录添加到 sys.path
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 if project_root not in sys.path:
