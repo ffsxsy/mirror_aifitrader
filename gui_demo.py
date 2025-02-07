@@ -4,7 +4,8 @@ import sys,time
 
 
 import os
-os.system("playwright install --with-deps chromium")
+# os.system("playwright install --with-deps chromium")
+os.system("playwright install  chromium")
 
 
 # 将项目根目录添加到 sys.path
