@@ -36,7 +36,7 @@ def playwright_process(command_queue, response_queue):
     # password = os.getenv('TRADER_PASSWORD')
     username = st.secrets["TRADER_USERNAME"]
     password = st.secrets['TRADER_PASSWORD']
-    robot = Browser_operation(url="https://web.ninjatrader.com/", headless=False)
+    robot = Browser_operation(url="https://web.ninjatrader.com/", headless=True)
     # 使用state_json
     # robot.initialize_browser_page(session_storage_path=state_json)
     #使用persistent_context_dir
