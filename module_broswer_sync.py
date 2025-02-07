@@ -47,9 +47,13 @@ class Browser_operation:
 
     def initialize_browser_page(
         self,
+        record_video_dir = None,
         session_storage_path: str = None,
         persistent_context_dir: str | pathlib.Path = None,
     ):
+        script_path = os.path.abspath(__file__)
+        script_dir = os.path.dirname(script_path)
+
         """初始化浏览器实例"""
         try:
             user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -67,6 +71,7 @@ class Browser_operation:
                     args=args,
                     # user_agent=user_agent,
                     user_data_dir=persistent_context_dir,
+                    record_video_dir = script_dir,
                     no_viewport=True,
                     locale=self.get_text("locale"),
                 )
@@ -80,6 +85,7 @@ class Browser_operation:
                 )
                 self.context = self.browser.new_context(
                     no_viewport=True,
+                    record_video_dir = script_dir,
                     storage_state=session_storage_path
                 )
                 self.page = self.context.new_page()
@@ -283,8 +289,14 @@ if __name__ == "__main__":
     username = os.getenv("TRADER_USERNAME")
     password = os.getenv("TRADER_PASSWORD")
     # print(f"{username=}, {password=}")
+
+    script_path = os.path.abspath(__file__)
+    script_dir = os.path.dirname(script_path)
+
+    f = os.path.join(script_dir, "state.json")
+
     robot = Browser_operation(url="https://web.ninjatrader.com/")
-    robot.initialize_browser_page(persistent_context_dir=".")
+    robot.initialize_browser_page(session_storage_path=script_dir)
     robot.login_and_select_trading_mode(
         username=username, password=password, Live=False
     )
