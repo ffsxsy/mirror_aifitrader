@@ -1,0 +1,706 @@
+{
+	"name": "test_mode",
+	"theme": "dark",
+	"mainWindowDimensions": {
+		"width": 867,
+		"height": 581,
+		"left": 221,
+		"top": 137,
+		"isMaximized": true,
+		"isFullScreen": false,
+		"isMinimized": false
+	},
+	"conversions": {
+		"convertedToColorLinks": true
+	},
+	"sidebar": {
+		"pinned": false
+	},
+	"goldenLayout": {
+		"content": [
+			{
+				"type": "stack",
+				"isClosable": true,
+				"reorderEnabled": true,
+				"title": "",
+				"activeItemIndex": 0,
+				"uuid": "87e53de3-6d53-45b0-8844-bd78e2fa750f",
+				"height": 100,
+				"width": 100,
+				"content": [
+					{
+						"type": "component",
+						"title": "...",
+						"componentName": "funCharts",
+						"componentState": {
+							"display": {
+								"showGrid": true,
+								"showCrosshair": true,
+								"showOrders": true,
+								"showCurPos": true,
+								"showContractDetails": true,
+								"showPnLOnPriceline": false,
+								"lockControls": false
+							},
+							"tradeMode": {
+								"enabled": true,
+								"orderQty": 1,
+								"multibracketConfig": {
+									"units": "T",
+									"brackets": [
+										{
+											"type": 0,
+											"qty": 1,
+											"takeProfit": 2,
+											"breakevenTrigger": 1,
+											"stopLoss": 2,
+											"stopLimit": 1,
+											"stopLossType": "Stop",
+											"autoTrail": {
+												"stopLoss": 1,
+												"trigger": 1,
+												"freq": 1
+											}
+										}
+									]
+								}
+							},
+							"scaleConfig": {
+								"rightOffset": 1,
+								"barRange": 74.46866304309924,
+								"anchor": "now",
+								"autoScale": true,
+								"delayedRefresh": true
+							},
+							"margin": {
+								"top": 0,
+								"bottom": 20,
+								"right": 60,
+								"left": 5
+							},
+							"databox": {
+								"enabled": false,
+								"left": 10,
+								"top": 10,
+								"width": 120,
+								"height": 120
+							},
+							"inputStreamData": [
+								{
+									"id": 1,
+									"plotAreaId": 1,
+									"volume": {
+										"plotAreaId": 1,
+										"axis": 1
+									},
+									"style": {
+										"color": "red"
+									},
+									"symbol": "MNQH5",
+									"chartDescription": {
+										"underlyingType": "MinuteBar",
+										"elementSize": 10,
+										"elementSizeUnit": "UnderlyingUnits",
+										"withHistogram": false
+									},
+									"chartType": "Candlestick",
+									"plots": {
+										"line": {
+											"color": "gray",
+											"lineStyle": 1,
+											"lineWidth": 1,
+											"opacity": 100
+										},
+										"candlestick": {
+											"bodyUp": {
+												"color": "#16EE1B",
+												"opacity": 100
+											},
+											"bodyDown": {
+												"color": "#E52545",
+												"opacity": 100
+											},
+											"bodyNeutral": {
+												"color": "#7e838c",
+												"opacity": 100
+											},
+											"wickUp": {
+												"color": "#37A14A",
+												"opacity": 100
+											},
+											"wickDown": {
+												"color": "#DE1007",
+												"opacity": 100
+											},
+											"wickNeutral": {
+												"color": "#7e838c",
+												"opacity": 100
+											},
+											"bodyUpOutline": {
+												"color": "#37A14A",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"bodyDownOutline": {
+												"color": "#DE1007",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"bodyNeutralOutline": {
+												"color": "#7e838c",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											}
+										},
+										"volProfile": {
+											"bodyUpOutline": {
+												"color": "#16EE1B",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"bodyDownOutline": {
+												"color": "#DE1007",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"bodyNeutralOutline": {
+												"color": "#D6DBE3",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"wickUp": {
+												"color": "#16EE1B",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"wickDown": {
+												"color": "#DE1007",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"wickNeutral": {
+												"color": "#D6DBE3",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"profile": {
+												"color": "#7e838c"
+											},
+											"bidAlert": {
+												"color": "#FF0000",
+												"enabled": true
+											},
+											"askAlert": {
+												"color": "#00FF00",
+												"enabled": true
+											},
+											"bidDot": {
+												"color": "#ffff00",
+												"enabled": true,
+												"seq": 1
+											},
+											"askDot": {
+												"color": "#5050FF",
+												"enabled": true,
+												"seq": 1
+											},
+											"imbalance": {
+												"bidColor": "#FA851E",
+												"askColor": "#69CAF0",
+												"factor": 1.5
+											},
+											"barHistograms": {
+												"enabled": true,
+												"normalizationMode": "PerBar",
+												"bidColor": "#3BA14E",
+												"askColor": "#B00724",
+												"opaqueVolume": false
+											}
+										},
+										"renko": {
+											"bodyUp": {
+												"color": "#35a24a",
+												"opacity": 100
+											},
+											"bodyDown": {
+												"color": "#e52545",
+												"opacity": 100
+											},
+											"bodyUpOutline": {
+												"color": "#7e838c",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"bodyDownOutline": {
+												"color": "#7e838c",
+												"lineStyle": 1,
+												"lineWidth": 1,
+												"opacity": 100
+											},
+											"projectionUp": {
+												"color": "#35ff4a",
+												"opacity": 100
+											},
+											"projectionDown": {
+												"color": "#e890ff",
+												"opacity": 100
+											}
+										},
+										"pointAndFigure": {
+											"bodyUp": {
+												"color": "#35a24a",
+												"opacity": 100
+											},
+											"bodyDown": {
+												"color": "#e52545",
+												"opacity": 100
+											},
+											"projectionUp": {
+												"color": "#35ff4a",
+												"opacity": 100
+											},
+											"projectionDown": {
+												"color": "#e890ff",
+												"opacity": 100
+											}
+										},
+										"TPO": {
+											"display": "Letter",
+											"boxSize": 8,
+											"autoBoxSize": true,
+											"letterColors": {
+												"tag": "PerLetter",
+												"color": "#F59080",
+												"letters": {
+													"A": "red",
+													"B": "green",
+													"C": "blue"
+												}
+											},
+											"defaultProfileProps": {
+												"split": false
+											},
+											"sessions": [
+												{
+													"id": 1,
+													"startTime": 530,
+													"stopTime": 1630,
+													"startLetter": 0,
+													"color": "auto"
+												}
+											],
+											"customProfiles": [
+												{
+													"start": {
+														"tradeDate": 20200803,
+														"sessionId": 1,
+														"letter": 0
+													},
+													"end": {
+														"tradeDate": 20200803,
+														"sessionId": 1,
+														"letter": 6
+													},
+													"props": {
+														"split": true
+													}
+												},
+												{
+													"start": {
+														"tradeDate": 20200803,
+														"sessionId": 1,
+														"letter": 7
+													},
+													"end": {
+														"tradeDate": 20200803,
+														"sessionId": 1,
+														"letter": 100
+													},
+													"props": {
+														"split": false
+													}
+												}
+											],
+											"initialBalance": {
+												"interval": 2,
+												"color": "#00b8ff",
+												"widthPx": 2,
+												"extensions": [
+													{
+														"percentage": 100,
+														"color": "#00719c"
+													},
+													{
+														"percentage": 150,
+														"color": "#009bd6"
+													},
+													{
+														"percentage": 200,
+														"color": "#00b8ff"
+													}
+												]
+											},
+											"volumeProfile": {
+												"enabled": true,
+												"color": "#80e8ff",
+												"labelColor": "black",
+												"poc": {
+													"enabled": true,
+													"color": "darkblue",
+													"extend": true
+												},
+												"valueArea": {
+													"enabled": true,
+													"percentage": 70,
+													"color": "blue",
+													"highlight": true,
+													"drawAsBar": true,
+													"barWidthPx": 2
+												}
+											},
+											"boxProfile": {
+												"poc": {
+													"enabled": true,
+													"color": "green",
+													"extend": true
+												},
+												"valueArea": {
+													"enabled": true,
+													"percentage": 70,
+													"color": "brown",
+													"highlight": true,
+													"drawAsBar": true,
+													"barWidthPx": 2
+												}
+											},
+											"indicators": {
+												"open": true,
+												"close": true,
+												"color": "#808080",
+												"mid": true,
+												"midColor": "#8080FF"
+											}
+										},
+										"ohlc": {}
+									},
+									"session": {
+										"type": "full"
+									},
+									"customBarRange": 100
+								}
+							],
+							"indicators": [
+								{
+									"name": "priceChannel",
+									"alias": "priceChannel",
+									"input": {
+										"streamId": 1
+									},
+									"plotAreaId": "overlay",
+									"axisId": 0,
+									"params": {
+										"period": 14
+									},
+									"plots": {
+										"HH": {
+											"color": "#33CC33",
+											"lineWidth": 1,
+											"opacity": 100,
+											"lineStyle": 3
+										},
+										"LL": {
+											"color": "#FF5050",
+											"lineWidth": 1,
+											"opacity": 100,
+											"lineStyle": 3
+										},
+										"middle": {
+											"color": "#7E838C",
+											"lineWidth": 1,
+											"opacity": 100,
+											"lineStyle": 3
+										}
+									},
+									"id": 1
+								}
+							],
+							"plotAreas": [
+								{
+									"id": 1,
+									"heightPercentage": 100,
+									"secondaryAxes": [
+										{
+											"id": 1,
+											"fraction": {
+												"from": 0,
+												"to": 0.2
+											},
+											"side": "left"
+										}
+									],
+									"rightAxis": {
+										"fraction": 1,
+										"labelFormat": {
+											"digits": 2
+										},
+										"autoScale": "once",
+										"valueRange": {
+											"min": 21190.7,
+											"max": 21576.8
+										},
+										"stepValue": 0.25
+									}
+								}
+							],
+							"componentName": "funCharts",
+							"__componentName": "funCharts",
+							"fillAnnotations": {
+								"enabled": false,
+								"sell": {
+									"color": "#e3600e"
+								},
+								"buy": {
+									"color": "#4894c7"
+								},
+								"pairingEnabled": false,
+								"profit": {
+									"color": "#35a24a"
+								},
+								"loss": {
+									"color": "#e52545"
+								}
+							},
+							"templateName": "10m_"
+						},
+						"isClosable": true,
+						"reorderEnabled": true
+					},
+					{
+						"type": "component",
+						"title": "...",
+						"componentName": "funCharts",
+						"componentState": {
+							"display": {
+								"showGrid": true,
+								"showCrosshair": true,
+								"showOrders": true,
+								"showCurPos": true,
+								"showContractDetails": true,
+								"showPnLOnPriceline": false,
+								"lockControls": false
+							},
+							"tradeMode": {
+								"enabled": true,
+								"orderQty": 1,
+								"multibracketConfig": {
+									"baseTemplate": "OFF",
+									"enabled": false
+								},
+								"timeInForce": {
+									"flag": "Day"
+								},
+								"stopConfig": {
+									"orderType": "Stop",
+									"units": "T",
+									"limitStep": 0
+								},
+								"lastUsedBracket": {
+									"units": "T",
+									"brackets": [
+										{
+											"type": 0,
+											"qty": 1,
+											"takeProfit": 2,
+											"breakevenTrigger": 1,
+											"stopLoss": 2,
+											"stopLimit": 1,
+											"stopLossType": "Stop",
+											"autoTrail": {
+												"stopLoss": 1,
+												"trigger": 1,
+												"freq": 1
+											}
+										}
+									]
+								}
+							},
+							"scaleConfig": {
+								"rightOffset": 1,
+								"barRange": 123.62716768647694,
+								"anchor": "now"
+							},
+							"margin": {
+								"top": 0,
+								"bottom": 20,
+								"right": 60,
+								"left": 5
+							},
+							"databox": {
+								"enabled": false,
+								"left": 10,
+								"top": 10,
+								"width": 295,
+								"height": 283
+							},
+							"inputStreamData": [
+								{
+									"id": 1,
+									"plotAreaId": 1,
+									"volume": {
+										"plotAreaId": 1,
+										"axis": 1
+									},
+									"style": {
+										"color": "red"
+									},
+									"symbol": "BTCH5",
+									"chartDescription": {
+										"underlyingType": "MinuteBar",
+										"elementSize": 10,
+										"elementSizeUnit": "UnderlyingUnits"
+									},
+									"chartType": "Candlestick"
+								}
+							],
+							"indicators": [
+								{
+									"id": 1,
+									"name": "sma",
+									"input": {
+										"streamId": 1,
+										"series": "close"
+									},
+									"params": {
+										"period": 15
+									},
+									"plotAreaId": 1,
+									"axisId": 0,
+									"plots": {
+										"_": {
+											"color": "blue"
+										}
+									}
+								}
+							],
+							"plotAreas": [
+								{
+									"id": 1,
+									"heightPercentage": 100,
+									"secondaryAxes": [
+										{
+											"id": 1,
+											"fraction": {
+												"from": 0,
+												"to": 0.2
+											},
+											"side": "left"
+										}
+									],
+									"rightAxis": {
+										"fraction": 1,
+										"labelFormat": {
+											"digits": 0
+										},
+										"autoScale": "once",
+										"valueRange": {
+											"min": 93139.75,
+											"max": 102715.25
+										},
+										"stepValue": 5
+									}
+								}
+							],
+							"componentName": "funCharts",
+							"__componentName": "funCharts",
+							"fillAnnotations": {
+								"enabled": false,
+								"sell": {
+									"color": "#e3600e"
+								},
+								"buy": {
+									"color": "#4894c7"
+								},
+								"pairingEnabled": false,
+								"profit": {
+									"color": "#35a24a"
+								},
+								"loss": {
+									"color": "#e52545"
+								}
+							},
+							"drawingTools": [
+								{
+									"name": "zoom",
+									"alias": "zoom",
+									"input": {
+										"streamId": 1,
+										"series": "close"
+									},
+									"plotAreaId": 1,
+									"axisId": 0,
+									"coords": {
+										"start": {
+											"date": {
+												"timestamp": "2024-09-29T16:00:00.000Z",
+												"offset": -459.5724470214531
+											},
+											"value": 89418.12558685446
+										},
+										"end": {
+											"date": {
+												"timestamp": "2024-09-29T16:00:00.000Z",
+												"offset": -459.5724470214531
+											},
+											"value": 89418.12558685446
+										},
+										"anchors": [
+											{
+												"x": {
+													"timestamp": "2024-09-29T16:00:00.000Z",
+													"offset": -459.5724470214531
+												},
+												"y": {
+													"value": 89418.12558685446,
+													"unit": "du"
+												}
+											},
+											{
+												"x": {
+													"timestamp": "2024-09-29T16:00:00.000Z",
+													"offset": -446.741097068879
+												},
+												"y": {
+													"value": 89900.6279342723,
+													"unit": "du"
+												}
+											}
+										]
+									},
+									"params": {},
+									"plots": {},
+									"id": 1
+								}
+							],
+							"color": "red"
+						},
+						"isClosable": true,
+						"reorderEnabled": true
+					}
+				]
+			}
+		],
+		"settings": {
+			"hotkeyUuid": null
+		}
+	}
+}

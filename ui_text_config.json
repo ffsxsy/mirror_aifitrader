@@ -1,0 +1,42 @@
+{
+    "English": {
+        "locale": "en-US",
+        "username_label": "Username",
+        "password_label": "Password",
+        "login_button": "Log In",
+        "accept_cookies": "Accept Cookies",
+        "simulation_button": "Launch",
+        "live_button": "Start Trading",
+        "launch_button": "Launch",
+        "trade_actions": {
+            "buy_market": "Buy Mkt",
+            "sell_market": "Sell Mkt",
+            "buy_bid": "Buy Bid",
+            "sell_ask": "Sell Ask"
+        },
+        "trade_status": {
+            "filled": "Filled",
+            "rejected": "Rejected"
+        }
+    },
+    "简体中文": {
+        "locale": "zh-CN",
+        "username_label": "用户名",
+        "password_label": "密码",
+        "login_button": "登录",
+        "accept_cookies": "接受 Cookies",
+        "simulation_button": "启动",
+        "live_button": "开始交易",
+        "launch_button": "启动",
+        "trade_actions": {
+            "buy_market": "市价买入",
+            "sell_market": "市价卖出",
+            "buy_bid": "买入出价",
+            "sell_ask": "卖出出价"
+        },
+        "trade_status": {
+            "filled": "已成交",
+            "rejected": "已拒绝"
+        }
+    }
+} 
